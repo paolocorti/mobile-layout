@@ -30,3 +30,7 @@
     transform: rotate(360deg);
   }
 }
+
+.react-swipeable-view-container, #root, #root > div, body, html {
+  height: 100%;
+}
