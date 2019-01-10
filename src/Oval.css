@@ -1,0 +1,48 @@
+.st0{
+  fill:url(#SVGID_1_);
+  animation: radialGrow 2s forwards;
+}
+.st1{fill:#F7B1AA;}
+.st2{
+  fill:#FFFFFF;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#oval {
+  animation: gravity 2s forwards,
+    movement 30s 2s infinite;
+}
+
+@keyframes gravity {
+  from { transform: translate(0px, -100px) }
+  to { transform: translate(0px, 0px) }
+}
+
+@keyframes blink {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes movement {
+  0%   { transform: translate(0px, 0px) }
+  25%  { transform: translate(6px, 0px) }
+  50%  { transform: translate(6px, 6px) }
+  75%  { transform: translate(0px, 6px) }
+  100% { transform: translate(0px, 0px) }
+}
+
+@keyframes radialGrow {
+  from {
+    rx: 0;
+    ry: 0;
+    opacity: 0;
+  }
+  to {
+    rx: 83.43;
+    ry: 11.58;
+    opacity: 1;
+  }
+}
