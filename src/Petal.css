@@ -1,0 +1,52 @@
+.st0{clip-path: url(#SVGID_2_);fill:url(#SVGID_3_);}
+.st1{opacity:0.6;}
+.st2{fill:#E8A39C;}
+.st3{fill:#D4928A;}
+.st4{clip-path:url(#SVGID_5_);fill:url(#SVGID_6_);}
+.st5{clip-path:url(#SVGID_8_);fill:url(#SVGID_9_);}
+.st6{clip-path:url(#SVGID_11_);fill:url(#SVGID_12_);}
+
+
+#petal1 {
+  animation-name: open1;
+  animation-duration: 3s;
+  transform-origin: top;
+}
+
+#petal2 {
+  animation-name: open2;
+  animation-duration: 3s;
+  transform-origin: top;
+}
+
+#petal3 {
+  animation-name: open3;
+  animation-duration: 3s;
+  transform-origin: top;
+}
+
+#petal4 {
+  animation-name: open4;
+  animation-duration: 3s;
+  transform-origin: top;
+}
+
+@keyframes open1 {
+  0%   { transform: rotate(-25deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes open2 {
+  0%   { transform: rotate(-12deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes open3 {
+  0%   { transform: rotate(12deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes open4 {
+  0%   { transform: rotate(25deg) }
+  100% { transform: rotate(0deg) }
+}
