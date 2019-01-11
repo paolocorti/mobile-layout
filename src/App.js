@@ -5,7 +5,8 @@ import { Stage, Layer, Rect, Text, Circle, Line } from 'react-konva'
 import SwipeableViews from 'react-swipeable-views'
 import logo from './logo.svg'
 import './App.css'
-import Petal from './Petal.js'
+import PetalRow from './PetalRow.js'
+import Shadow from './Shadow.js'
 
 class MyCircle extends React.Component {
   zoom = () => {
@@ -82,8 +83,13 @@ const App = () => (
   <SwipeableViews axis={'y'} containerStyle={{ height: '100%' }} slideStyle={{height: '100%'}}>
     <div style={Object.assign({}, styles.slide, styles.slide1)}>
       <SwipeableViews>
-        <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', backgroundImage: `linear-gradient(#e1eaef, #e4f3ec)` }}>
-          <Petal />
+        <div className='swipe-container'>
+          <svg className='viz' x="0px" y="0px" viewBox="0 0 195.43 135.98" width="200px" height="300px">
+            <PetalRow translate='0px, 70px'/>
+            <PetalRow translate='0px, 10px'/>
+            <PetalRow translate='0px, -50px'/>
+            <Shadow translate='0px, -50px'/>
+          </svg>
         </div>
 
         {/*<div style={Object.assign({}, styles.subslide)}>
