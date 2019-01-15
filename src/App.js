@@ -79,16 +79,30 @@ const styles = {
   }
 };
 
+const svgWidth = 550
+
 const App = () => (
   <SwipeableViews axis={'y'} containerStyle={{ height: '100%' }} slideStyle={{height: '100%'}}>
     <div style={Object.assign({}, styles.slide, styles.slide1)}>
       <SwipeableViews>
         <div className='swipe-container'>
-          <svg className='viz' x="0px" y="0px" viewBox="0 0 195.43 135.98" width="200px" height="300px">
-            <PetalRow translate='0px, 70px'/>
-            <PetalRow translate='0px, 10px'/>
-            <PetalRow translate='0px, -50px'/>
-            <Shadow translate='0px, -50px'/>
+          <svg className='viz' x="0px" y="0px" viewBox="0 0 400 400" width={svgWidth} height={svgWidth}>
+            <defs>
+              <linearGradient id="petalGradient"
+                              x1="0%" y1="100%"
+                              x2="0%" y2="0%"
+                              spreadMethod="pad"
+                              gradientUnits="objectBoundingBox">
+                <stop offset="0%"   stop-color="rgb(230,235,237)" stop-opacity="1"/>
+                <stop offset="38,98%" stop-color="rgb(237,207,201)" stop-opacity="1"/>
+                <stop offset="100%" stop-color="rgb(217,132,132)" stop-opacity="1"/>
+              </linearGradient>
+            </defs>
+            <g transform={`translate(${(svgWidth - 220) / 2}, 0)`}>
+              <PetalRow id={3} petals={11} offset={20}/>
+              <PetalRow id={2} petals={9} offset={10}/>
+              <PetalRow id={1} petals={7} offset={0}/>
+            </g>
           </svg>
         </div>
 

@@ -1,10 +1,5 @@
-.st0{clip-path: url(#SVGID_2_);fill:url(#SVGID_3_);}
-.st1{opacity:0.6;}
-.st2{fill:#E8A39C;}
-.st3{fill:#D4928A;}
-.st4{clip-path:url(#SVGID_5_);fill:url(#SVGID_6_);}
-.st5{clip-path:url(#SVGID_8_);fill:url(#SVGID_9_);}
-.st6{clip-path:url(#SVGID_11_);fill:url(#SVGID_12_);}
+.st0{fill:#C97D75;}
+.st1{opacity:0.7;}
 
 .shadow{
   opacity:0.7;
@@ -12,56 +7,276 @@
 }
 
 
-#petal1 {
-  transform: rotate(-25deg);
-  animation: open1 3s 3s forwards;
-  transition-timing-function: ease-out;
-  transform-origin: top;
-}
-
-#petal2 {
-  transform: rotate(-12deg);
-  animation: open2 3s 3s forwards;
-  transition-timing-function: ease-out;
-  transform-origin: top;
-}
-
-#petal3 {
-  transform: rotate(12deg);
+#petal-1 {
+  transform: rotate(0);
   animation: open3 3s 3s forwards;
   transition-timing-function: ease-out;
-  transform-origin: top;
+  transform-origin: 45px 0;
 }
 
-#petal4 {
-  transform: rotate(25deg);
+#petal-2 {
+  transform: rotate(0);
   animation: open4 3s 3s forwards;
   transition-timing-function: ease-out;
-  transform-origin: top;
+  transform-origin: 45px 0;
 }
 
+#petal-3 {
+  transform: rotate(0);
+  animation: open5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-4 {
+  transform: rotate(0);
+  animation: open6 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-5 {
+  transform: rotate(0);
+  animation: open7 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-6 {
+  transform: rotate(0);
+  animation: open8 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-7 {
+  transform: rotate(0);
+  animation: open9 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+
+#petal-11 {
+  transform: rotate(0);
+  animation: open2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-12 {
+  transform: rotate(0);
+  animation: open3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-13 {
+  transform: rotate(0);
+  animation: open4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-14 {
+  transform: rotate(0);
+  animation: open5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-15 {
+  transform: rotate(0);
+  animation: open6 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-16 {
+  transform: rotate(0);
+  animation: open7 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-17 {
+  transform: rotate(0);
+  animation: open8 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-18 {
+  transform: rotate(0);
+  animation: open9 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-19 {
+  transform: rotate(0);
+  animation: open10 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+
+#petal-21 {
+  transform: rotate(0);
+  animation: open1 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-22 {
+  transform: rotate(0);
+  animation: open2 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-23 {
+  transform: rotate(0);
+  animation: open3 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-24 {
+  transform: rotate(0);
+  animation: open4 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-25 {
+  transform: rotate(0);
+  animation: open5 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-26 {
+  transform: rotate(0);
+  animation: open6 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-27 {
+  transform: rotate(0);
+  animation: open7 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-28 {
+  transform: rotate(0);
+  animation: open8 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-29 {
+  transform: rotate(0);
+  animation: open9 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-30 {
+  transform: rotate(0);
+  animation: open10 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+#petal-31 {
+  transform: rotate(0);
+  animation: open11 3s 3s forwards;
+  transition-timing-function: ease-out;
+  transform-origin: 45px 0;
+}
+
+
+
+
+
+
 @keyframes open1 {
-  0%   { transform: rotate(-25deg) }
-  100% { transform: rotate(0deg) }
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(-79deg) }
 }
 
 @keyframes open2 {
-  0%   { transform: rotate(-12deg) }
-  100% { transform: rotate(0deg) }
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(-63.2deg) }
 }
 
 @keyframes open3 {
-  0%   { transform: rotate(12deg) }
-  100% { transform: rotate(0deg) }
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(-47.4deg) }
 }
 
 @keyframes open4 {
-  0%   { transform: rotate(25deg) }
-  100% { transform: rotate(0deg) }
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(-31.6deg) }
 }
 
-.viz {
-  animation: gravity 4s forwards, movement 30s 4s infinite;
+@keyframes open5 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(-15.8deg) }
+}
+
+
+@keyframes open6 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(0deg)}
+}
+
+@keyframes open7 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(15.8deg) }
+}
+
+@keyframes open8 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(31.6deg) }
+}
+
+@keyframes open9 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(47.4deg) }
+}
+
+@keyframes open10 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(63.2deg) }
+}
+
+@keyframes open11 {
+  0%   { transform: rotate(0deg)}
+  100% { transform: rotate(79deg) }
+}
+
+.petal-row-1 {
+  transform: translate(0px, -500px);
+  animation: gravity1 4s forwards;
+  animation-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.petal-row-2 {
+  transform: translate(0px, -500px);
+  animation: gravity2 4s forwards;
+  animation-delay: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.petal-row-3 {
+  transform: translate(0px, -500px);
+  animation: gravity3 4s forwards;
+  animation-delay: 1s;
   transition-timing-function: ease-in-out;
 }
 
@@ -73,8 +288,20 @@
   100% { transform: translate(0px, 0px) }
 }
 
-@keyframes gravity {
+@keyframes gravity1 {
   0%   { transform: translate(0px, -500px) }
   98%  { transform: translate(0px, 0px) }
   100% { transform: translate(0px, 0px) }
+}
+
+@keyframes gravity2 {
+  0%   { transform: translate(0px, -500px) }
+  98%  { transform: translate(0px, 60px) }
+  100% { transform: translate(0px, 60px) }
+}
+
+@keyframes gravity3 {
+  0%   { transform: translate(0px, -500px) }
+  98%  { transform: translate(0px, 130px) }
+  100% { transform: translate(0px, 130px) }
 }
