@@ -9,21 +9,21 @@
 
 #petal-1 {
   transform: rotate(0);
-  animation: open3 3s 3s forwards;
+  animation: open9 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-2 {
   transform: rotate(0);
-  animation: open4 3s 3s forwards;
+  animation: open8 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-3 {
   transform: rotate(0);
-  animation: open5 3s 3s forwards;
+  animation: open7 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
@@ -37,21 +37,21 @@
 
 #petal-5 {
   transform: rotate(0);
-  animation: open7 3s 3s forwards;
+  animation: open5 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-6 {
   transform: rotate(0);
-  animation: open8 3s 3s forwards;
+  animation: open4 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
 
 #petal-7 {
   transform: rotate(0);
-  animation: open9 3s 3s forwards;
+  animation: open3 3s 3s forwards;
   transition-timing-function: ease-out;
   transform-origin: 45px 0;
 }
@@ -302,6 +302,6 @@
 
 @keyframes gravity3 {
   0%   { transform: translate(0px, -500px) }
-  98%  { transform: translate(0px, 130px) }
-  100% { transform: translate(0px, 130px) }
+  98%  { transform: translate(0px, 125px) }
+  100% { transform: translate(0px, 125px) }
 }

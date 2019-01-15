@@ -8,7 +8,8 @@ import './Petal.css'
 class PetalRow extends React.Component {
 
   render() {
-		const petals = [...Array(this.props.petals).keys()]
+		const petals = [...Array(this.props.petals).keys()].reverse()
+		console.log(petals);
     return (
 			<g className={`petal-row-${this.props.id}`} style={{ transform: `translate(${this.props.translate})` }}>
 				{

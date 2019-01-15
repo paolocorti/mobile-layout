@@ -89,13 +89,12 @@ const App = () => (
           <svg className='viz' x="0px" y="0px" viewBox="0 0 400 400" width={svgWidth} height={svgWidth}>
             <defs>
               <linearGradient id="petalGradient"
-                              x1="0%" y1="100%"
-                              x2="0%" y2="0%"
-                              spreadMethod="pad"
+                              x1="0%" y1="0%"
+                              x2="0%" y2="100%"
                               gradientUnits="objectBoundingBox">
-                <stop offset="0%"   stop-color="rgb(230,235,237)" stop-opacity="1"/>
-                <stop offset="38,98%" stop-color="rgb(237,207,201)" stop-opacity="1"/>
-                <stop offset="100%" stop-color="rgb(217,132,132)" stop-opacity="1"/>
+                <stop offset="0%" stop-color="rgb(217,132,132)" stop-opacity="1"/>
+                <stop offset="61%" stop-color="rgb(237,207,201)" stop-opacity="1"/>
+                <stop offset="100%" stop-color="rgb(230,235,237)" stop-opacity="1"/>
               </linearGradient>
             </defs>
             <g transform={`translate(${(svgWidth - 220) / 2}, 0)`}>
