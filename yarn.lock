@@ -6855,6 +6855,13 @@ react-swipeable-views-core@^0.13.0:
     "@babel/runtime" "7.0.0"
     warning "^4.0.1"
 
+react-swipeable-views-core@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.13.1.tgz#8829a922462a8bdd701709cd1b385393d38f1527"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    warning "^4.0.1"
+
 react-swipeable-views-utils@^0.13.0:
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.0.tgz#0ea17aa67f88a69d534c79d591f8d82ef98346a4"
@@ -6865,6 +6872,17 @@ react-swipeable-views-utils@^0.13.0:
     prop-types "^15.6.0"
     react-event-listener "^0.6.0"
     react-swipeable-views-core "^0.13.0"
+
+react-swipeable-views-utils@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.13.1.tgz#8e604af7316d409f22d8c47f841859dc150df30b"
+  dependencies:
+    "@babel/runtime" "7.0.0"
+    fbjs "^0.8.4"
+    keycode "^2.1.7"
+    prop-types "^15.6.0"
+    react-event-listener "^0.6.0"
+    react-swipeable-views-core "^0.13.1"
 
 react-swipeable-views@^0.13.0:
   version "0.13.0"

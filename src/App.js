@@ -3,6 +3,7 @@ import Konva from 'konva';
 import { render } from 'react-dom';
 import { Stage, Layer, Rect, Text, Circle, Line } from 'react-konva';
 import SwipeableViews from 'react-swipeable-views';
+import { virtualize } from 'react-swipeable-views-utils';
 import logo from './logo.svg';
 import './App.css';
 import PetalRow from './PetalRow.js';
@@ -80,153 +81,189 @@ const styles = {
 
 const svgWidth = 550;
 
-const App = () => (
-  <div>
-    <div
-      className='chapter-subsection swipe-container'
-      style={{ height: '100vh' }}
-    >
-      LANDING
-    </div>
+class App extends React.Component {
+  state = {
+    index: 0
+  };
 
-    <SwipeableViews
-      axis={'x'}
-      containerStyle={{ height: '100%' }}
-      slideStyle={{ height: '100%' }}
-    >
-      <div style={Object.assign({}, styles.slide, styles.slide1)}>
-        {/*
-        <div className='swipe-container'>
-          <svg
-            className='viz'
-            x='0px'
-            y='0px'
-            viewBox='0 0 400 400'
-            width={svgWidth}
-            height={svgWidth}
-          >
-            <defs>
-              <linearGradient
-                id='petalGradient'
-                x1='0%'
-                y1='0%'
-                x2='0%'
-                y2='100%'
-                gradientUnits='objectBoundingBox'
+  handleChangeIndex = index => () => {
+    console.log(index);
+    this.setState({
+      index
+    });
+  };
+
+  render() {
+    const { index } = this.state;
+
+    return (
+      <div>
+        <div
+          className='chapter-subsection swipe-container'
+          style={{ height: '100vh' }}
+        >
+          LANDING
+        </div>
+
+        <SwipeableViews
+          axis={'x'}
+          containerStyle={{ height: '100%' }}
+          slideStyle={{ height: '100%' }}
+          index={index}
+        >
+          <div style={Object.assign({}, styles.slide, styles.slide1)}>
+            {/*
+          <div className='swipe-container'>
+            <svg
+              className='viz'
+              x='0px'
+              y='0px'
+              viewBox='0 0 400 400'
+              width={svgWidth}
+              height={svgWidth}
+            >
+              <defs>
+                <linearGradient
+                  id='petalGradient'
+                  x1='0%'
+                  y1='0%'
+                  x2='0%'
+                  y2='100%'
+                  gradientUnits='objectBoundingBox'
+                >
+                  <stop
+                    offset='0%'
+                    stop-color='rgb(217,132,132)'
+                    stop-opacity='1'
+                  />
+                  <stop
+                    offset='61%'
+                    stop-color='rgb(237,207,201)'
+                    stop-opacity='1'
+                  />
+                  <stop
+                    offset='100%'
+                    stop-color='rgb(230,235,237)'
+                    stop-opacity='1'
+                  />
+                </linearGradient>
+              </defs>
+              <g transform={`translate(${(svgWidth - 220) / 2}, 0)`}>
+                <PetalRow id={3} petals={11} offset={20} />
+                <PetalRow id={2} petals={9} offset={10} />
+                <PetalRow id={1} petals={7} offset={0} />
+              </g>
+            </svg>
+          </div>*/}
+
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#ffeed1, #ffba44)'
+              }}
+            >
+              CHAPTER 1
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#ffba44, #db9a69)'
+              }}
+            >
+              OVERVIEW TRENDS
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#db9a69, #9b5d47)'
+              }}
+            >
+              OVERVIEW REGIONS
+              <button
+                className='next-button'
+                onClick={this.handleChangeIndex(1)}
               >
-                <stop
-                  offset='0%'
-                  stop-color='rgb(217,132,132)'
-                  stop-opacity='1'
-                />
-                <stop
-                  offset='61%'
-                  stop-color='rgb(237,207,201)'
-                  stop-opacity='1'
-                />
-                <stop
-                  offset='100%'
-                  stop-color='rgb(230,235,237)'
-                  stop-opacity='1'
-                />
-              </linearGradient>
-            </defs>
-            <g transform={`translate(${(svgWidth - 220) / 2}, 0)`}>
-              <PetalRow id={3} petals={11} offset={20} />
-              <PetalRow id={2} petals={9} offset={10} />
-              <PetalRow id={1} petals={7} offset={0} />
-            </g>
-          </svg>
-        </div>*/}
-
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#ffeed1, #ffba44)'
-          }}
-        >
-          CHAPTER 1
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#ffba44, #db9a69)'
-          }}
-        >
-          OVERVIEW TRENDS
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#db9a69, #9b5d47)'
-          }}
-        >
-          OVERVIEW REGIONS
-        </div>
+                NEXT
+              </button>
+            </div>
+          </div>
+          <div className='chapter-2'>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#e1eaef, #e4f3ec)'
+              }}
+            >
+              CHAPTER 2
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#e4f3ec, #ffd3f8)'
+              }}
+            >
+              RELATED QUERIES
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#ffd3f8, #b7a2c1)'
+              }}
+            >
+              COUNTRY FOCUS
+              <button
+                className='next-button'
+                onClick={this.handleChangeIndex(2)}
+              >
+                NEXT
+              </button>
+            </div>
+          </div>
+          <div className='chapter-2'>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#b8e5ed, #639da8)'
+              }}
+            >
+              CHAPTER 3
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#639da8, #637aa8)'
+              }}
+            >
+              DREAMS SHARED BY LANGUAGE PAIRS
+            </div>
+            <div
+              className='chapter-subsection'
+              style={{
+                height: '100vh',
+                backgroundImage: 'linear-gradient(#637aa8, #32466d)'
+              }}
+            >
+              NETWORK OF SHARED DREAMS
+              <button
+                className='next-button'
+                onClick={this.handleChangeIndex(0)}
+              >
+                NEXT
+              </button>
+            </div>
+          </div>
+        </SwipeableViews>
       </div>
-      <div className='chapter-2'>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#e1eaef, #e4f3ec)'
-          }}
-        >
-          CHAPTER 2
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#e4f3ec, #ffd3f8)'
-          }}
-        >
-          RELATED QUERIES
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#ffd3f8, #b7a2c1)'
-          }}
-        >
-          COUNTRY FOCUS
-        </div>
-      </div>
-      <div className='chapter-2'>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#b8e5ed, #639da8)'
-          }}
-        >
-          CHAPTER 3
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#639da8, #637aa8)'
-          }}
-        >
-          DREAMS SHARED BY LANGUAGE PAIRS
-        </div>
-        <div
-          className='chapter-subsection'
-          style={{
-            height: '100vh',
-            backgroundImage: 'linear-gradient(#637aa8, #32466d)'
-          }}
-        >
-          NETWORK OF SHARED DREAMS
-        </div>
-      </div>
-    </SwipeableViews>
-  </div>
-);
+    );
+  }
+}
 
 export default App;

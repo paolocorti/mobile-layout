@@ -8,7 +8,9 @@
     "react-dom": "^16.6.3",
     "react-konva": "^16.6.31",
     "react-scripts": "2.1.1",
-    "react-swipeable-views": "^0.13.0"
+    "react-swipeable-views": "^0.13.0",
+    "react-swipeable-views-core": "^0.13.1",
+    "react-swipeable-views-utils": "^0.13.1"
   },
   "scripts": {
     "start": "react-scripts start",

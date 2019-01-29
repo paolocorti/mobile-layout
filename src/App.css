@@ -54,3 +54,12 @@ html {
   align-items: center;
   font-size: 30px;
 }
+
+.next-button {
+  padding: 15px;
+  background-color: none;
+  font-size: 22px;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 10px;
+}
